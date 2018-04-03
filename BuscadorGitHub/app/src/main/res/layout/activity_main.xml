@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.rcorrent.buscadorgithub.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/pt_busca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digitar o nome do repositório"
+        android:inputType="textPersonName"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="A URL será exibida aqui"
+        android:textSize="22sp" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_github_resultado"
+                android:text="Faça uma busca!"
+                android:textSize="18sp"/>
+        </ScrollView>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mensagem_erro"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="@string/mensagem_erro"
+            android:padding="16dp"
+            android:visibility="invisible"
+            android:textColor="@color/colorDarkRed"/>
+
+        <ProgressBar
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:id="@+id/bp_aguarde"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+</LinearLayout>

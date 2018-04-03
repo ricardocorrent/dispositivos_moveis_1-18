@@ -2,6 +2,7 @@ package com.rcorrent.meusfavoritos
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 open class Favoritos {
@@ -57,12 +58,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Toast.makeText(this, "Listando", Toast.LENGTH_LONG).show()
+
         for (i in Favoritos.getLista()){
             tvNome.append(i + "\n\n\n")
 
         }
-
     }
-
-
 }

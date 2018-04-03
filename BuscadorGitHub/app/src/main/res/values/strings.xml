@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Buscador GitHub</string>
+    <string name="buscar">Buscar</string>
+    <string name="mensagem_erro">Não foi possível obter o resultado, tente novamente</string>
+</resources>

@@ -1,8 +1,7 @@
-package com.rcorrent.buscadorgithub
+package com.rcorrent.clima
 
 import android.net.Uri
 import android.util.Log
-import java.io.IOException
 import java.io.InputStream
 import java.net.HttpURLConnection
 import java.net.MalformedURLException

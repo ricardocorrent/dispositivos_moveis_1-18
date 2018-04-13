@@ -2,7 +2,7 @@ package com.rcorrent.clima
 
 import android.content.Context
 import android.text.format.DateUtils
-import com.rcorrent.clima.R
+
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -115,6 +115,8 @@ class DataUtils {
             val gmtOffset = tz.getOffset(date).toLong()
             return (date + gmtOffset) / DIA_EM_MILISSEGUNDOS
         }
+
+
 
     }
 

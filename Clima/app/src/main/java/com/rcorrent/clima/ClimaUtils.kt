@@ -1,4 +1,4 @@
-package com.rcorrent.clima.util
+package com.rcorrent.clima
 
 import android.content.Context
 import android.util.Log

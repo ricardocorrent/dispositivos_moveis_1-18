@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Clima prova</string>
+    <string name="mensagem_erro">Não foi possível obter os dados do clima, tente novamente</string>
+</resources>

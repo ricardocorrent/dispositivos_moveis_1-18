@@ -7,4 +7,8 @@
         android:id="@+id/acao_atualizar"
         android:title="@string/acao_atualizar"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/acao_mapa"
+        android:title="Mapa"
+        app:showAsAction="never"/>
 </menu>
